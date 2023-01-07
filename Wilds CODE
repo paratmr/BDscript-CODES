@@ -3,7 +3,7 @@ $suppressErrors[]
      $color[#2f3136]
 $if[$checkContains[$message[amount];-;x;*;+;=;÷;/;%]==true]
 $description[Please make sure your `amount` doesn't contain any signs or symbols.]
-$elseif[$isNumber[$message[amount]]==false]
+$elseif[$isNumber[$message[amount]]==true]
 $description[Please make sure your `amount` is a number.]
 $else
 
