@@ -7,7 +7,6 @@ $elseif[$isNumber[$message[amount]]==false]
 $description[Please make sure your `amount` is a number.]
 $else
 
-
      $if[$toLowercase[$message[item]]==paper]
 $if[$getVar[Paper;$authorID]>=$message[amount]]
 $onlyIf[$multi[$message[amount];50]<=$calculate[$getVar[CoinCapacity;$authorID]-$getVar[Coin;$authorID]];You don't have enough coin space.]
@@ -240,5 +239,8 @@ $else
 $description[You don't have enough Carrot to sell]
 $endif
      $endif
+
+$endif
+
 
 $endif
