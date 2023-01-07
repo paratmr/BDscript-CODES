@@ -11,9 +11,9 @@ $else
      $if[$getVar[Paper;$authorID]<=$message[amount]]
 $description[You don't have enough Paper to sell]
      $else
-$if[$multi[$message[amount];50]<=$calculate[$getVar[CoinCapacity;$authorID]-$getVar[Coin;$authorID]]]
+$if[$multi[$message[amount];50]>=$calculate[$getVar[CoinCapacity;$authorID]-$getVar[Coin;$authorID]]]
 $description[You don't have enough coin space.]
-$elseif[$getVar[Coin;$authorID]<=$getVar[CoinCapacity;$authorID]]
+$elseif[$getVar[Coin;$authorID]>=$getVar[CoinCapacity;$authorID]]
 $description[You don't have enough coin space.]
 $else
 $description[You sold the  $message[amount]x <:Paper:1031979112740438187> Paper for $multi[$message[amount];50]]
