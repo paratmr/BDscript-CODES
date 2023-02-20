@@ -1,4 +1,4 @@
-     $var[A;$optOff[$random[1;21]]]
+     $var[A;$random[1;21]]
      $color[#2f3136]
 
           $if[$var[A]==1]
